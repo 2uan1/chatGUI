@@ -4,20 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messaging GUI</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/9be74cf573.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div>
-        <nav>
-            <div id="sideTab">
+    <div class="main-grid-container">
+        <nav id="nav-bar">
+            <div class="side-tab">
+                <div class="upper-side">
+                    <div class="user-icon">
+                        <img src="assets/7ef96b7bafb985977c35d083dcaabb33.jpg">
+                    </div>
+                    <div class="top-icons">
+                        <div>
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-square-check"></i>
+                        </div>
+                    </div>
 
+
+                </div>
+                <div class="middle-side"></div>
+                <div class="lower-side">
+                    <div>
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <div>                    
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
             </div>
-            <div id="contactContainer">
-
+            <div class="contact-container">
+                <div class="contact-container__header">
+                    <form>
+                        <input type="text" name="search" placeholder="Search. for contact..." class="contact-search">
+                    </form>
+                    <div class="add-contact-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="contact-container__body">
+                    <div class="contact">   
+                        <div class="contact-icon">
+                            <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                        </div>
+                        <div class="contact-name">stupid cat</div>
+                        <div class="contact-recent-message">yo stupid</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/7ef96b7bafb985977c35d083dcaabb33.jpg">
+                        </div>
+                        <div class="contact-name">you</div>
+                        <div class="contact-recent-message">yo handsome</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/orange.jpg">
+                        </div>
+                        <div class="contact-name">orange cat</div>
+                        <div class="contact-recent-message">im evil</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/sillycat.png">
+                        </div>
+                        <div class="contact-name">silly cat</div>
+                        <div class="contact-recent-message"> good morning fellow silly cat</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/puss.jpg">
+                        </div>
+                        <div class="contact-name">puss</div>
+                        <div class="contact-recent-message">nyan</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/shrek.jpg">
+                        </div>
+                        <div class="contact-name">shrek</div>
+                        <div class="contact-recent-message">somebody once told me...</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/cs50cat.jpg">
+                        </div>
+                        <div class="contact-name">smart cat</div>
+                        <div class="contact-recent-message">hello stupid cat</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/herbert.jpg">
+                        </div>
+                        <div class="contact-name">herbert the destroyer of worlds</div>
+                        <div class="contact-recent-message">please spare me mr.Herbert</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/ratchet.jpg">
+                        </div>
+                        <div class="contact-name">ratchet cat</div>
+                        <div class="contact-recent-message">im gonna kill u</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/bingus.avif">
+                        </div>
+                        <div class="contact-name">bingus</div>
+                        <div class="contact-recent-message">bingus</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/micheal.webp">
+                        </div>
+                        <div class="contact-name">micheal</div>
+                        <div class="contact-recent-message">meow</div>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon">
+                            <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                        </div>
+                        <div class="contact-name">silly cat</div>
+                        <div class="contact-recent-message"> good morning fellow silly cat</div>
+                    </div>
+                </div>
             </div>
         </nav>
         <main>
-            <div id="chatViewContainer">
+            <div id="chat-view-container">
+                <header class="chat-view-container__header">
+                    <div class="contact-icon">
+                        <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                    </div>
+                    <div class="contact-name">stupid cat</div>
+                </header>
+                <article class="chat-view-container__body">
 
+                    <div class="block-date">
+                        <div class="chat-date">
+                            11:06 yesterday
+                        </div>
+                        <div class="chat-item">
+                            <div class="contact-avatar">
+                                <div class="contact-icon">
+                                    <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                                </div>
+                            </div>
+                            <div class="chat-item__body">
+                                <div class="chat-message">
+                                    hello
+                                </div>
+                                <div class="chat-message">
+                                    stupid
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="chat-item me">
+                            <div></div>
+                            <div class="chat-item__body me">
+                                <div class="chat-message me">
+                                    no u stupid
+                                </div>
+                                <div class="chat-message me">
+                                    and hello too
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-date">
+                        <div class="chat-date">
+                            12:43 yesterday
+                        </div>
+                        <div class="chat-item">
+                            <div class="contact-avatar">
+                                <div class="contact-icon">
+                                    <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                                </div>
+                            </div>
+                            <div class="chat-item__body">
+                                <div class="chat-message">
+                                    im not stupid u are
+                                </div>
+                                <div class="chat-message">
+                                    dingus
+                                </div>
+                                <div class="chat-message">
+                                    bingus
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="chat-item me">
+                            <div></div>
+                            <div class="chat-item__body">
+                                <div class="chat-message me">
+                                    no u
+                                </div>
+                                <div class="chat-message me">
+                                    u are bibngus
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="contact-avatar">
+                                <div class="contact-icon">
+                                    <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                                </div>
+                            </div>
+                            <div class="chat-item__body">
+                                <div class="chat-message">
+                                    no
+                                </div>
+                                <div class="chat-message">
+                                    shut up
+                                </div>
+                                <div class="chat-message">
+                                    bingus
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-date">
+                        <div class="chat-date">
+                            7:06 today
+                        </div>
+                        <div class="chat-item">
+                            <div class="contact-avatar">
+                                <div class="contact-icon">
+                                    <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                                </div>
+                            </div>
+                            <div class="chat-item__body">
+                                <div class="chat-message">
+                                    morning bingus
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="alert">
+                            stupid cat renamed you to bingus
+                        </div>
+                        <div class="chat-item me">
+                            <div></div>
+                            <div class="chat-item__body me">
+                                <div class="chat-message me">
+                                    no u are bingus
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="contact-avatar">
+                                <div class="contact-icon">
+                                    <img src="assets/b9c47ef70bff06613d397abfce02c6e7.jpg">
+                                </div>
+                            </div>
+                            <div class="chat-item__body">
+                                <div class="chat-message">
+                                    no u look quite like a bingus though
+                                </div>
+                                <div class="chat-message">
+                                    so bingus u are
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                </article>
+                <div class="text-input">
+                    <form>
+                        <input type="text" name="message" placeholder="Type a message...">
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </main>
     </div>
